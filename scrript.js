@@ -3,7 +3,8 @@ let arr = [];
 while (true) {
   let cmd = prompt("Введите команду:");
 
-  let parts = cmd.split(" "); 
+
+  let parts = cmd.split(","); 
   let action = parts[0]; 
   let value = parts[1];
 
@@ -17,7 +18,8 @@ while (true) {
     arr.splice(index, 1);
     console.log("Удалили:", value);
   }
-  if (cmd === "stop") {
+   if (cmd === "stop") {
+    console.log("Stop")
     break; 
   }
 }
